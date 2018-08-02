@@ -1,8 +1,7 @@
-﻿using Emmellsoft.IoT.Rpi.SenseHat;
+﻿using System;
 using System.Linq;
-using System.Net.Http;
-using System.Text.RegularExpressions;
 using Windows.UI;
+using Emmellsoft.IoT.Rpi.SenseHat;
 
 namespace RaspberryApp.Classes.SenseHatActions
 {
@@ -119,8 +118,7 @@ namespace RaspberryApp.Classes.SenseHatActions
         {
             try
             {
-                var html = new HttpClient().GetStringAsync("http://zuzia19062017.cba.pl/time.php").GetAwaiter().GetResult();
-                var time = Regex.Match(html, "~~~(\\d{4})~~~").Groups[1].ToString();
+                var time = DateTime.Now.ToString("HHmm");
 
                 return time.ToCharArray().Select(x => int.Parse(x.ToString())).ToArray();
             }

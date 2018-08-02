@@ -104,6 +104,7 @@
     <Compile Include="Classes\SenseHatActions\HelloAction.cs" />
     <Compile Include="Classes\SenseHatActions\OffAction.cs" />
     <Compile Include="Classes\SenseHatActions\OneColorAction.cs" />
+    <Compile Include="Classes\SenseHatActions\PlayMp3Action.cs" />
     <Compile Include="Classes\SenseHatActions\RgbAction.cs" />
     <Compile Include="Classes\SenseHatController.cs" />
     <Compile Include="MainPage.xaml.cs">

@@ -1,8 +1,8 @@
-﻿using Emmellsoft.IoT.Rpi.SenseHat;
-using RaspberryApp.Classes.SenseHatActions;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
+using Emmellsoft.IoT.Rpi.SenseHat;
+using RaspberryApp.Classes.SenseHatActions;
 
 namespace RaspberryApp.Classes
 {
