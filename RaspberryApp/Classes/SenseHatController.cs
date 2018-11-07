@@ -3,6 +3,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Emmellsoft.IoT.Rpi.SenseHat;
 using RaspberryApp.Classes.SenseHatActions;
+using Windows.UI;
 
 namespace RaspberryApp.Classes
 {
@@ -27,10 +28,25 @@ namespace RaspberryApp.Classes
                 senseHat = await SenseHatFactory.GetSenseHat();
                 actions = new List<BaseAction>
                 {
-                    //new OneColorAction(senseHat, Colors.White),
-                    //new OneColorAction(senseHat, Colors.DarkRed),
-                    //new OneColorAction(senseHat, Colors.DarkGreen),
-                    //new OneColorAction(senseHat, Colors.DarkBlue),
+                    new OneColorAction(senseHat, Colors.White),
+                    new OneColorAction(senseHat, Colors.Red),
+                    new OneColorAction(senseHat, Colors.DarkRed),
+                    new OneColorAction(senseHat, Colors.Green),
+                    new OneColorAction(senseHat, Colors.DarkGreen),
+                    new OneColorAction(senseHat, Colors.Yellow),
+                    new OneColorAction(senseHat, Colors.DarkOrange),
+                    new OneColorAction(senseHat, Colors.Blue),
+                    new OneColorAction(senseHat, Colors.DarkBlue),
+                    new OneColorAction(senseHat, Colors.Magenta),
+                    new OneColorAction(senseHat, Colors.Purple),
+                    new OneColorAction(senseHat, Colors.DarkOrchid),
+                    new OneColorAction(senseHat, Colors.GhostWhite),
+                    new OneColorAction(senseHat, Colors.LavenderBlush),
+                    new OneColorAction(senseHat, Colors.Moccasin),
+                    new OneColorAction(senseHat, Colors.MintCream),
+                    new OneColorAction(senseHat, Colors.RosyBrown),
+                    new OneColorAction(senseHat, Colors.Violet),
+                    new OneColorAction(senseHat, Colors.Khaki),
                     //new RgbAction(senseHat),
                     //new HelloAction(senseHat),
                     //new ClockAction(senseHat),
