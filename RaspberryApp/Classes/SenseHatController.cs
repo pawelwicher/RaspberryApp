@@ -47,9 +47,9 @@ namespace RaspberryApp.Classes
                     new OneColorAction(senseHat, Colors.RosyBrown),
                     new OneColorAction(senseHat, Colors.Violet),
                     new OneColorAction(senseHat, Colors.Khaki),
-                    //new RgbAction(senseHat),
-                    //new HelloAction(senseHat),
-                    //new ClockAction(senseHat),
+                    new RgbAction(senseHat),
+                    new HelloAction(senseHat),
+                    new ClockAction(senseHat),
                     new DisplayTextAction(senseHat),
                     new OffAction(senseHat)
                 };
